@@ -49,7 +49,7 @@ const StartGameScreen = props => {
                 <Card style={styles.inputContainer} >
                 <Text>Select a Number</Text>
                 <Input blurOnSubmit 
-                        autoCapitalize='none' autoCurrect={false} keyboardType="number-pad" maxLength={2} styles={styles.input}
+                       autoCapitalize='none' autoCurrect={false} keyboardType="number-pad" maxLength={2} styles={styles.input}
                        onChangeText={numberInputHandler}
                        value={enteredValue}  />
                 <View style={styles.buttonsContainer} >
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 10,
         alignItems: 'center',
-        justifyContent: 'center'
+        // justifyContent: 'center'
     },
     title:{
         fontSize: 20,
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
     inputContainer:{
         padding: 20,
         borderRadius:20,
-        width: 300
+        width: 300,
+        alignItems: 'center'
     },
     buttonsContainer: {
         flexDirection:'row',
