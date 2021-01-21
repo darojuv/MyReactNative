@@ -110,7 +110,9 @@ const styles = StyleSheet.create({
         width:'80%'
     },
     list:{
-        alignItems: 'center'
+        flexGrow:1,
+        alignItems: 'center',
+        justifyContent: 'flex-end',
     }
 });
 
