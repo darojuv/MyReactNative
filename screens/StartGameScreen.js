@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import {View, StyleSheet, Text, Button, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableWithoutFeedback, Keyboard, Alert, Dimensions } from 'react-native';
 
 import Card from '../components/Card';
 import Colors from '../contsants/colors';
@@ -98,7 +98,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     buttons:{
-        width:100
+       // width:100
+       width: Dimensions.get('window').width / 4
     },
     input:{
         width:50,
