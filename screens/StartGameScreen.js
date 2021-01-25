@@ -85,7 +85,9 @@ const styles = StyleSheet.create({
     inputContainer:{
         padding: 20,
         borderRadius:20,
-        width: 300,
+        width: '80%',
+        maxWidth:'95%',
+        minWidth:300,
         alignItems: 'center'
     },
     buttonsContainer: {
